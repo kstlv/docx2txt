@@ -13,21 +13,37 @@ Command | Description
 
 ## Usage examples
 
-View `recipe.docx`:
+### View "recipe.docx"
+
+Command (cmd):
 
 ```
 docx2txt.exe view recipe.docx
 ```
 
-Convert `notes.odt` to text file:
+Command (powershell)
+
+```powershell
+.\docx2txt.exe v .\recipe.docx
+```
+
+### Convert "notes.odt" to text file
+
+Command (cmd):
 
 ```
 docx2txt.exe convert notes.odt
+```
+
+Command (powershell)
+
+```powershell
+.\docx2txt.exe c .\notes.odt
 ```
 
 ## How to Build
 
 Windows:
 
-1. Download and install [golang](https://go.dev/)
-2. Go to the source folder and `go build -ldflags "-s -w"`
+1. Download and install [golang](https://go.dev/).
+2. Go to the source folder and `go build -ldflags "-s -w"`.
