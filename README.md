@@ -2,6 +2,8 @@
 
 Console tool for converting and viewing `.docx` (Microsoft Word) or `.odt` (OpenDocument Format) files.
 
+![docx2txt help image](./help.png)
+
 ## Commands
 
 Command | Description
