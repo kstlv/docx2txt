@@ -15,7 +15,11 @@ Command | Description
 `view <filename>` | Displays text from a docx/odt file.
 `convert <filename>` | Convert docx/odt file to text file.
 
-## Usage examples
+## How to Use
+
+You can get `.exe` from [Releases](https://github.com/kstlv/docx2txt/releases/latest).
+
+### Usage examples
 
 View text from "document.docx":
 
@@ -29,7 +33,7 @@ Convert "notes.odt" to text file:
 .\docx2txt.exe convert .\notes.odt
 ```
 
-You can also use only first letters for commands: help, view, convert.
+You can use only first letters for commands: `help`, `view`, `convert`.
 
 ## Issues
 
