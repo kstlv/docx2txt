@@ -31,6 +31,10 @@ Convert "notes.odt" to text file:
 
 You can also use only first letters for commands: help, view, convert.
 
+## Issues
+
+- Special characters and lowercase Cyrillic letters were lost after a "convert" or "view" operation was performed on files with the `.odt` extension. Files with the `.docx` extension do not have this problem.
+
 ## How to Build
 
 1. Download and install [golang](https://go.dev/).
