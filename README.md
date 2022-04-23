@@ -36,7 +36,7 @@ You can also use only first letters for commands: help, view, convert.
 1. Download and install [golang](https://go.dev/).
 2. Go to the source folder and `go build -ldflags "-s -w"`.
 
-Golang environment settings affect the build command. In the environment settings, you can define the architecture and OS.
+Golang environment settings `go env` affect the build command. In the environment settings, you can define the architecture and OS.
 
 ## License
 
