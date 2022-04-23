@@ -2,6 +2,8 @@
 
 Console tool for converting and viewing `.docx` (Microsoft Word) or `.odt` (OpenDocument Format) files.
 
+The tool is currently only available for Windows. You can make builds for Mac/Linux yourself.
+
 ![docx2txt help image](./help.png)
 
 ## Commands
@@ -15,37 +17,27 @@ Command | Description
 
 ## Usage examples
 
-### View "recipe.docx"
-
-Command (cmd):
-
-```
-docx2txt.exe view recipe.docx
-```
-
-Command (powershell)
+View text from "document.docx":
 
 ```powershell
-.\docx2txt.exe v .\recipe.docx
+.\docx2txt.exe view .\document.docx
 ```
 
-### Convert "notes.odt" to text file
-
-Command (cmd):
-
-```
-docx2txt.exe convert notes.odt
-```
-
-Command (powershell)
+Convert "notes.odt" to text file:
 
 ```powershell
-.\docx2txt.exe c .\notes.odt
+.\docx2txt.exe convert .\notes.odt
 ```
+
+You can also use only first letters for commands: help, view, convert.
 
 ## How to Build
 
-Windows:
-
 1. Download and install [golang](https://go.dev/).
 2. Go to the source folder and `go build -ldflags "-s -w"`.
+
+Golang environment settings affect the build command. In the environment settings, you can define the architecture and OS.
+
+## License
+
+See file [LICENSE](./LICENSE).
