@@ -21,6 +21,8 @@ You can get `.exe` from [Releases](https://github.com/kstlv/docx2txt/releases/la
 
 ### Usage examples
 
+You can only use the first letter for commands: `help`, `view`, `convert`.
+
 View text from "document.docx":
 
 ```powershell
@@ -33,11 +35,11 @@ Convert "notes.odt" to text file:
 .\docx2txt.exe convert .\notes.odt
 ```
 
-You can use only first letters for commands: `help`, `view`, `convert`.
+Display help:
 
-## Issues
-
-- Special characters and lowercase Cyrillic letters were lost after a "convert" or "view" operation was performed on files with the `.odt` extension. Files with the `.docx` extension do not have this problem.
+```powershell
+.\docx2txt.exe h
+```
 
 ## How to Build
 
@@ -45,6 +47,10 @@ You can use only first letters for commands: `help`, `view`, `convert`.
 2. Go to the source folder and `go build -ldflags "-s -w"`.
 
 Golang environment settings `go env` affect the build command. In the environment settings, you can define the architecture and OS.
+
+## Issues
+
+- Special characters and lowercase Cyrillic letters were lost after a "convert" or "view" operation was performed on files with the `.odt` extension. Files with the `.docx` extension do not have this problem.
 
 ## License
 
